@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1446667744 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\main.cpp
+	<iostream>
+
+1499940277 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\cpu.cpp
+	"CPU.h"
+
+1499940782 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\cpu.h
+	"Instruction.h"
+	"Register.h"
+	"Timer.h"
+
+1499936612 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\instruction.h
+
+1499940307 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\register.h
+	<string>
+
+1499940198 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\timer.h
+
+1499936601 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\instruction.cpp
+	"Instruction.h"
+
+1499939807 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\memory.cpp
+	"Memory.h"
+	"InvalidMemoryAddress.h"
+
+1499939429 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\memory.h
+
+1499940564 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\operatingsystem.cpp
+	"OperatingSystem.h"
+
+1499936714 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\operatingsystem.h
+	"CPU.h"
+	"Memory.h"
+
+1499937085 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\program.cpp
+	"Program.h"
+
+1499937071 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\program.h
+	<list>
+	"Instruction.h"
+
+1499940411 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\register.cpp
+	"Register.h"
+
+1499940159 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\timer.cpp
+	"Timer.h"
+
+1499938837 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\iomodule.cpp
+	"IOModule.h"
+	<iostream>
+
+1499938606 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\iomodule.h
+	<list>
+	<string>
+	"Instruction.h"
+
+1499939729 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\invalidmemoryaddress.cpp
+	"InvalidMemoryAddress.h"
+
+1499939758 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\invalidmemoryaddress.h
+	<exception>
+

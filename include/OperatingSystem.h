@@ -15,15 +15,12 @@ class OperatingSystem
          *  Operating System constructor.
          */
         OperatingSystem();
+        OperatingSystem(string program, int timeStep);
         /**
          *  Operating System destructor.
          */
         virtual ~OperatingSystem();
 
-        /**
-         *  Initilizes operating system
-         */
-        void init();
         /**
          *  Runs operating system
          */
@@ -33,7 +30,6 @@ class OperatingSystem
 
     private:
         CPU cpu;
-        Memory memory;
 };
 
 #endif // OPERATINGSYSTEM_H

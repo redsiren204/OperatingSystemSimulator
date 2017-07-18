@@ -11,8 +11,10 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option parameters="program1.txt 300" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +24,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +35,32 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/CPU.h" />
+		<Unit filename="include/IOModule.h" />
+		<Unit filename="include/Instruction.h" />
+		<Unit filename="include/InvalidInstructionCode.h" />
+		<Unit filename="include/InvalidMemoryAddress.h" />
+		<Unit filename="include/Memory.h" />
+		<Unit filename="include/OperatingSystem.h" />
+		<Unit filename="include/Program.h" />
+		<Unit filename="include/Register.h" />
+		<Unit filename="include/Timer.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="program1.txt" />
+		<Unit filename="program2.txt" />
+		<Unit filename="program3.txt" />
+		<Unit filename="program4.txt" />
+		<Unit filename="program5.txt" />
+		<Unit filename="src/CPU.cpp" />
+		<Unit filename="src/IOModule.cpp" />
+		<Unit filename="src/Instruction.cpp" />
+		<Unit filename="src/InvalidInstructionCode.cpp" />
+		<Unit filename="src/InvalidMemoryAddress.cpp" />
+		<Unit filename="src/Memory.cpp" />
+		<Unit filename="src/OperatingSystem.cpp" />
+		<Unit filename="src/Program.cpp" />
+		<Unit filename="src/Register.cpp" />
+		<Unit filename="src/Timer.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

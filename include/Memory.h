@@ -9,6 +9,12 @@
 #ifndef MEMORY_H
 #define MEMORY_H
 
+#include <string>
+#include <fstream>
+#include <sstream>
+#include "Program.h"
+
+using namespace std;
 
 class Memory
 {
@@ -23,19 +29,41 @@ class Memory
         virtual ~Memory();
 
         /**
-         *  Declare macro USER_PROGRAM_ADDRESS is 1000
+         *  Declares macro USER_PROGRAM_ADDRESS is 999
+         *  Declares macro MEMORY_MAXIMUM_SIZE is 2000
          */
-        static const int USER_PROGRAM_ADDRESS = 1000;
+        static const int USER_PROGRAM_ADDRESS = 999;
+        static const int MEMORY_MAXIMUM_SIZE = 2000;
 
         /**
-         *  Read value from an address.
+         *  Reads value from an address.
          */
         int read(int address);
 
         /**
-         *  Write a value to an address.
+         *  Writes a value to an address.
+         *  @param address is an integer
+         *  @param data is an integer
          */
         void write(int address, int data);
+
+        /**
+         *  Loads program from a string
+         *  @param program is a string
+         */
+        void loadProgram(string program);
+
+        /**
+         *  Gets program
+         *  @return a Program
+         */
+        Program getProgram();
+
+        /**
+         *  Parses instruction
+         *  @param parseIt is a string
+         */
+        int parseInstruction(string parseIt);
 
         /**
          *  Clean function.
@@ -46,9 +74,12 @@ class Memory
 
     private:
         /**
-         *  Declare memory array with 2000 elements.
+         *  Declare memory array with MEMORY_MAXIMUM_SIZE elements.
          */
-        int memory[2000];
+        int memory[MEMORY_MAXIMUM_SIZE];
+        int address;
+        Program program;
 };
 
 #endif // MEMORY_H
+

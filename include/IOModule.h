@@ -24,17 +24,11 @@ class IOModule
         virtual ~IOModule();
 
         /**
-         *  Reads a file
-         *  @param filePath is a string
-         *  @return list<Instruction> is a list of instructions
-         */
-        static list<Instruction> readFile(string filePath);
-        /**
-         *  Print function
+         *  Display function
          *  @param code is an integer
          *  @param mode is an integer
          */
-        static void print(int code, int mode);
+        static void display(int code, int mode);
 
     protected:
 

@@ -1,32 +1,28 @@
 #include "IOModule.h"
 
 #include <iostream>
+#include <stdio.h>
 
 using namespace std;
 
 IOModule::IOModule()
 {
-    //ctor
-}
-
-static list<Instruction> readFile(string filePath)
-{
 
 }
 
-static void print(int code, int mode)
+void IOModule::display(int code, int mode)
 {
     if (mode == 1)
     {
-        cout << code;
+        printf("%d", code);
     }
     else
     {
-        cout << code;
+        printf("%c", code);
     }
 }
 
 IOModule::~IOModule()
 {
-    //dtor
+
 }

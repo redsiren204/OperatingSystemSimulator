@@ -2,7 +2,14 @@
 
 Instruction::Instruction()
 {
-    //ctor
+    code = 0;
+    operand = 0;
+}
+
+Instruction::Instruction(int insCode, int insOperand)
+{
+    code = insCode;
+    operand = insOperand;
 }
 
 int Instruction::getCode()
@@ -27,5 +34,5 @@ void Instruction::setOperand(int operand)
 
 Instruction::~Instruction()
 {
-    //dtor
+
 }

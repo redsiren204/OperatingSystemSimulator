@@ -24,5 +24,5 @@ void Register::setValue(int value)
 
 Register::~Register()
 {
-    //dtor
+
 }

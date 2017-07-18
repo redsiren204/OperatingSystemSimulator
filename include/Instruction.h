@@ -5,6 +5,7 @@
 #ifndef INSTRUCTION_H
 #define INSTRUCTION_H
 
+
 class Instruction
 {
     public:
@@ -12,6 +13,7 @@ class Instruction
          *  Instruction constructor.
          */
         Instruction();
+        Instruction(int insCode, int insOperand);
         /**
          *  Instruction destructor.
          */

@@ -1,11 +1,32 @@
 #include "OperatingSystem.h"
+#include "Memory.h"
+#include "CPU.h"
 
 OperatingSystem::OperatingSystem()
 {
-    // ctor
+
+}
+
+OperatingSystem::OperatingSystem(string program, int timeStep)
+{
+    /**
+     *  Initializes CPU and memory
+     */
+    Memory memory;
+    memory.loadProgram(program);
+
+    cpu = CPU(memory, timeStep);
+}
+
+void OperatingSystem::run()
+{
+    /**
+     *  Runs the operating system
+     */
+    cpu.run();
 }
 
 OperatingSystem::~OperatingSystem()
 {
-    //dtor
+
 }

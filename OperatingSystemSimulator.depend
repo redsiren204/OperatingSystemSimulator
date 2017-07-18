@@ -1,35 +1,65 @@
 # depslib dependency file v1.0
-1446667744 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\main.cpp
+1500275866 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\main.cpp
 	<iostream>
+	<string>
+	<sstream>
+	<OperatingSystem.h>
 
-1499940277 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\cpu.cpp
+1500275866 System.h>
+
+1500281502 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\cpu.cpp
 	"CPU.h"
+	"Instruction.h"
+	<stdlib.h>
+	"Memory.h"
+	"InvalidInstructionCode.h"
 
-1499940782 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\cpu.h
+1500256329 structionCode.h"
+
+1500278144 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\cpu.h
 	"Instruction.h"
 	"Register.h"
 	"Timer.h"
+	"Memory.h"
+	"IOModule.h"
 
-1499936612 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\instruction.h
+1499940411 h"
+
+1500266759 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\instruction.h
 
 1499940307 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\register.h
 	<string>
 
+1500264590 
+
 1499940198 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\timer.h
 
-1499936601 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\instruction.cpp
+1500266784 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\instruction.cpp
 	"Instruction.h"
 
-1499939807 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\memory.cpp
+1500275271 on.h"
+
+1500279109 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\memory.cpp
 	"Memory.h"
 	"InvalidMemoryAddress.h"
+	<iostream>
+	<cstring>
+	<string>
 
-1499939429 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\memory.h
+1500276391 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\memory.h
+	<string>
+	<fstream>
+	<sstream>
+	"Program.h"
 
-1499940564 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\operatingsystem.cpp
+1499937085 "
+
+1500275990 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\operatingsystem.cpp
 	"OperatingSystem.h"
+	"Memory.h"
+	"CPU.h"
 
-1499936714 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\operatingsystem.h
+1500264590 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\operatingsystem.h
 	"CPU.h"
 	"Memory.h"
 
@@ -46,11 +76,12 @@
 1499940159 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\timer.cpp
 	"Timer.h"
 
-1499938837 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\iomodule.cpp
+1500275350 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\iomodule.cpp
 	"IOModule.h"
 	<iostream>
+	<stdio.h>
 
-1499938606 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\iomodule.h
+1500275271 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\iomodule.h
 	<list>
 	<string>
 	"Instruction.h"
@@ -58,6 +89,188 @@
 1499939729 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\invalidmemoryaddress.cpp
 	"InvalidMemoryAddress.h"
 
+1499939729 moryAddress.h"
+
 1499939758 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\invalidmemoryaddress.h
 	<exception>
+
+1500256375 >
+
+1500256375 c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\include\invalidinstructioncode.h
+	<exception>
+
+1500256329 source:c:\users\haihd.toshiba-tsdv\cppworld\operatingsystemsimulator\src\invalidinstructioncode.cpp
+	"InvalidInstructionCode.h"
+
+1500351058 source:/home/tamtv/workspace/OperatingSystemSimulator/main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<OperatingSystem.h>
+
+1500350491 /home/tamtv/workspace/OperatingSystemSimulator/include/OperatingSystem.h
+	"CPU.h"
+	"Memory.h"
+
+1500349180 /home/tamtv/workspace/OperatingSystemSimulator/include/CPU.h
+	"Instruction.h"
+	"Register.h"
+	"Timer.h"
+	"Memory.h"
+	"IOModule.h"
+
+1500349757 /home/tamtv/workspace/OperatingSystemSimulator/include/Instruction.h
+
+1500350683 /home/tamtv/workspace/OperatingSystemSimulator/include/Register.h
+	<string>
+
+1500347639 /home/tamtv/workspace/OperatingSystemSimulator/include/Timer.h
+
+1500350090 /home/tamtv/workspace/OperatingSystemSimulator/include/Memory.h
+	<string>
+	<fstream>
+	<sstream>
+	"Program.h"
+
+1500347296 /home/tamtv/workspace/OperatingSystemSimulator/include/Program.h
+	<list>
+	"Instruction.h"
+
+1500349871 /home/tamtv/workspace/OperatingSystemSimulator/include/IOModule.h
+	<list>
+	<string>
+	"Instruction.h"
+
+1500351141 source:/home/tamtv/workspace/OperatingSystemSimulator/src/CPU.cpp
+	"CPU.h"
+	"Instruction.h"
+	<stdlib.h>
+	"InvalidInstructionCode.h"
+
+1500347090 /home/tamtv/workspace/OperatingSystemSimulator/include/InvalidInstructionCode.h
+	<exception>
+
+1500350758 source:/home/tamtv/workspace/OperatingSystemSimulator/src/Instruction.cpp
+	"Instruction.h"
+
+1499939729 source:/home/tamtv/workspace/OperatingSystemSimulator/src/InvalidMemoryAddress.cpp
+	"InvalidMemoryAddress.h"
+
+1500347098 /home/tamtv/workspace/OperatingSystemSimulator/include/InvalidMemoryAddress.h
+	<exception>
+
+1500350777 source:/home/tamtv/workspace/OperatingSystemSimulator/src/IOModule.cpp
+	"IOModule.h"
+	<iostream>
+	<stdio.h>
+
+1500350788 source:/home/tamtv/workspace/OperatingSystemSimulator/src/Memory.cpp
+	"Memory.h"
+	"InvalidMemoryAddress.h"
+	<iostream>
+	<cstring>
+	<string>
+
+1500350800 source:/home/tamtv/workspace/OperatingSystemSimulator/src/OperatingSystem.cpp
+	"OperatingSystem.h"
+	"Memory.h"
+	"CPU.h"
+
+1500350550 source:/home/tamtv/workspace/OperatingSystemSimulator/src/Program.cpp
+	"Program.h"
+
+1500350691 source:/home/tamtv/workspace/OperatingSystemSimulator/src/Register.cpp
+	"Register.h"
+
+1500350721 source:/home/tamtv/workspace/OperatingSystemSimulator/src/Timer.cpp
+	"Timer.h"
+
+1500256329 source:/home/tamtv/workspace/OperatingSystemSimulator/src/InvalidInstructionCode.cpp
+	"InvalidInstructionCode.h"
+
+1500351977 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<OperatingSystem.h>
+
+1500350491 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/OperatingSystem.h
+	"CPU.h"
+	"Memory.h"
+
+1500352081 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/CPU.h
+	"Instruction.h"
+	"Register.h"
+	"Timer.h"
+	"Memory.h"
+	"IOModule.h"
+
+1500349757 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/Instruction.h
+
+1500350683 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/Register.h
+	<string>
+
+1500347639 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/Timer.h
+
+1500350090 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/Memory.h
+	<string>
+	<fstream>
+	<sstream>
+	"Program.h"
+
+1500347296 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/Program.h
+	<list>
+	"Instruction.h"
+
+1500349871 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/IOModule.h
+	<list>
+	<string>
+	"Instruction.h"
+
+1500352440 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/src/CPU.cpp
+	"CPU.h"
+	"Instruction.h"
+	<stdlib.h>
+	"InvalidInstructionCode.h"
+
+1500347090 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/InvalidInstructionCode.h
+	<exception>
+
+1500350758 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/src/Instruction.cpp
+	"Instruction.h"
+
+1499939729 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/src/InvalidMemoryAddress.cpp
+	"InvalidMemoryAddress.h"
+
+1500347098 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/InvalidMemoryAddress.h
+	<exception>
+
+1500350777 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/src/IOModule.cpp
+	"IOModule.h"
+	<iostream>
+	<stdio.h>
+
+1500350788 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/src/Memory.cpp
+	"Memory.h"
+	"InvalidMemoryAddress.h"
+	<iostream>
+	<cstring>
+	<string>
+
+1500350800 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/src/OperatingSystem.cpp
+	"OperatingSystem.h"
+	"Memory.h"
+	"CPU.h"
+
+1500350550 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/src/Program.cpp
+	"Program.h"
+
+1500350691 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/src/Register.cpp
+	"Register.h"
+
+1500350721 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/src/Timer.cpp
+	"Timer.h"
+
+1500256329 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/src/InvalidInstructionCode.cpp
+	"InvalidInstructionCode.h"
 

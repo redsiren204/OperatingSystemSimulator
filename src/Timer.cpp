@@ -17,5 +17,5 @@ int Timer::getStep()
 
 Timer::~Timer()
 {
-    //dtor
+
 }

@@ -2,7 +2,7 @@
 
 Program::Program()
 {
-    //ctor
+
 }
 
 int Program::getPid()
@@ -27,5 +27,5 @@ void Program::setInstructions(list<Instruction> instructions)
 
 Program::~Program()
 {
-    //dtor
+
 }

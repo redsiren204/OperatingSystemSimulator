@@ -46,6 +46,7 @@ void CPU::run()
         //cout << "Ins " << count << ": " << ins.getCode() << " --- " << ins.getOperand() << endl;
         //if (ins.getCode() == 23) break;
         executeInstruction(ins);
+        count++;
     }
 
     memMgr.clean();

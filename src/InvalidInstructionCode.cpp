@@ -2,5 +2,5 @@
 
 const char* InvalidInstructionCode::what() const throw()
 {
-    return "Invalid instruction code";
+    return "Index out of range";
 }

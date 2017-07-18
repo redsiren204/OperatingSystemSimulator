@@ -1,7 +1,10 @@
 #include "CPU.h"
 #include "Instruction.h"
-#include <stdlib.h>
+#include <cstdlib>
 #include "InvalidInstructionCode.h"
+#include <iostream>
+
+using namespace std;
 
 CPU::CPU()
 {
@@ -36,9 +39,12 @@ void CPU::run()
     PC.setValue(0);
 
     isFinished = false;
+    int count = 1;
     while (!isFinished)
     {
         Instruction ins = getNextIns();
+        //cout << "Ins " << count << ": " << ins.getCode() << " --- " << ins.getOperand() << endl;
+        //if (ins.getCode() == 23) break;
         executeInstruction(ins);
     }
 
@@ -63,13 +69,11 @@ Instruction CPU::getNextIns()
         case 21:
         case 22:
         case 23:
-        {
             insOperand = memMgr.read(PC.getValue() + 1);
-        }
-        break;
+            break;
 
         default:
-        break;
+            break;
 	}
 
 	Instruction instruction = Instruction(insCode, insOperand);
@@ -83,104 +87,137 @@ void CPU::executeInstruction(Instruction instruction)
 {
     int insCode = instruction.getCode();
     int insOperand = instruction.getOperand();
+    //cout << "Ins: " << insCode << endl;
+    //cout << "Operand: " << insOperand << endl;
 
     switch (insCode)
 	{
-        case 1: loadValue(insOperand);
-        break;
+        case 1:
+            loadValue(insOperand);
+            break;
 
-        case 2: loadAddress(insOperand);
-        break;
+        case 2:
+            loadAddress(insOperand);
+            break;
 
-        case 3: loadInd(insOperand);
-        break;
+        case 3:
+            loadInd(insOperand);
+            break;
 
-        case 4: loadIdxX(insOperand);
-        break;
+        case 4:
+            loadIdxX(insOperand);
+            break;
 
-        case 5: loadIdxY(insOperand);
-        break;
+        case 5:
+            loadIdxY(insOperand);
+            break;
 
-        case 6: loadSpX();
-        break;
+        case 6:
+            loadSpX();
+            break;
 
-        case 7: store(insOperand);
-        break;
+        case 7:
+            store(insOperand);
+            break;
 
-        case 8: getRand();
-        break;
+        case 8:
+            getRand();
+            break;
 
-        case 9: put(insOperand);
-        break;
+        case 9:
+            put(insOperand);
+            break;
 
-        case 10: addX();
-        break;
+        case 10:
+            addX();
+            break;
 
-        case 11: addY();
-        break;
+        case 11:
+            addY();
+            break;
 
-        case 12: subX();
-        break;
+        case 12:
+            subX();
+            break;
 
-        case 13: subY();
-        break;
+        case 13:
+            subY();
+            break;
 
-        case 14: copyToX();
-        break;
+        case 14:
+            copyToX();
+            break;
 
-        case 15: copyFromX();
-        break;
+        case 15:
+            copyFromX();
+            break;
 
-        case 16: copyToY();
-        break;
+        case 16:
+            copyToY();
+            break;
 
-        case 17: copyFromY();
-        break;
+        case 17:
+            copyFromY();
+            break;
 
-        case 18: copyToSP();
-        break;
+        case 18:
+            copyToSP();
+            break;
 
-        case 19: copyFromSP();
-        break;
+        case 19:
+            copyFromSP();
+            break;
 
-        case 20: jump(insOperand);
-        break;
+        case 20:
+            jump(insOperand);
+            break;
 
-        case 21: jumpIfEqual(insOperand);
-        break;
+        case 21:
+            jumpIfEqual(insOperand);
+            break;
 
-        case 22: jumpIfNotEqual(insOperand);
-        break;
+        case 22:
+            jumpIfNotEqual(insOperand);
+            break;
 
-        case 23: call(insOperand);
-        break;
+        case 23:
+            call(insOperand);
+            break;
 
-        case 24: ret();
-        break;
+        case 24:
+            ret(insOperand);
+            break;
 
-        case 25: incX();
-        break;
+        case 25:
+            incX();
+            break;
 
-        case 26: decX();
-        break;
+        case 26:
+            decX();
+            break;
 
-        case 27: push();
-        break;
+        case 27:
+            push();
+            break;
 
-        case 28: pop();
-        break;
+        case 28:
+            pop();
+            break;
 
-        case 29: interrupt();
-        break;
+        case 29:
+            interrupt();
+            break;
 
-        case 30: returnInterrupt();
-        break;
+        case 30:
+            returnInterrupt();
+            break;
 
-        case 50: endExecute();
-        break;
+        case 50:
+            endExecute();
+            break;
 
-	default:
-        throw InvalidInstructionCode();
+        default:
+            throw InvalidInstructionCode();
 	}
 }
 
@@ -247,7 +284,7 @@ void CPU::loadIdxY(int address)
  */
 void CPU::loadSpX()
 {
-    int value = memMgr.read(SP.getValue() + Y.getValue());
+    int value = memMgr.read(SP.getValue() + X.getValue());
     AC.setValue(value);
 
     PC.setValue(PC.getValue() + 1);
@@ -434,15 +471,26 @@ void CPU::jumpIfNotEqual(int address)
  */
 void CPU::call(int address)
 {
-    // TBD
+    SP.setValue(memMgr.read(address));
+    memMgr.write(SP.getValue(), AC.getValue());
+
+    PC.setValue(PC.getValue() + 1);
+    //jump(address);
+
 }
 
 /**
  *  Pops return address from the stack, jump to the address
  */
-void CPU::ret()
+void CPU::ret(int address)
 {
-    // TBD
+    int value = memMgr.read(memMgr.read(address));
+
+    memMgr.write(value, 0);
+    SP.setValue(SP.getValue() + 1);
+
+    PC.setValue(PC.getValue() + 1);
+    //jump(address);
 }
 
 /**

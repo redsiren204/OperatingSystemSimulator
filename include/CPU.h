@@ -167,7 +167,7 @@ class CPU
         /**
          *  Pops return address from the stack, jump to the address
          */
-        void ret();
+        void ret(int address);
 
         /**
          *  Increments the value in X
@@ -226,7 +226,7 @@ class CPU
         bool userMode;
         bool isInterrupt;
 
-        bool isFinished;
+        bool isFinished = false;
 };
 
 #endif // CPU_H

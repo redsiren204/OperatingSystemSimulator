@@ -188,7 +188,7 @@
 1500256329 source:/home/tamtv/workspace/OperatingSystemSimulator/src/InvalidInstructionCode.cpp
 	"InvalidInstructionCode.h"
 
-1500351977 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/main.cpp
+1500366937 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/main.cpp
 	<iostream>
 	<string>
 	<sstream>
@@ -198,7 +198,7 @@
 	"CPU.h"
 	"Memory.h"
 
-1500352081 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/CPU.h
+1500369805 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/CPU.h
 	"Instruction.h"
 	"Register.h"
 	"Timer.h"
@@ -212,7 +212,7 @@
 
 1500347639 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/Timer.h
 
-1500350090 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/Memory.h
+1500353344 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/Memory.h
 	<string>
 	<fstream>
 	<sstream>
@@ -227,11 +227,12 @@
 	<string>
 	"Instruction.h"
 
-1500352440 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/src/CPU.cpp
+1500372398 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/src/CPU.cpp
 	"CPU.h"
 	"Instruction.h"
-	<stdlib.h>
+	<cstdlib>
 	"InvalidInstructionCode.h"
+	<iostream>
 
 1500347090 /home/tamtv/TrainingC++/OperatingSystemSimulator/include/InvalidInstructionCode.h
 	<exception>
@@ -250,7 +251,7 @@
 	<iostream>
 	<stdio.h>
 
-1500350788 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/src/Memory.cpp
+1500367637 source:/home/tamtv/TrainingC++/OperatingSystemSimulator/src/Memory.cpp
 	"Memory.h"
 	"InvalidMemoryAddress.h"
 	<iostream>

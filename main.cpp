@@ -7,9 +7,6 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-    string program;
-    int timer = 0;
-
     switch (argc)
 	{
         case 1:
@@ -21,7 +18,6 @@ int main(int argc, char* argv[])
 
         case 2:
         {
-            program = argv[1];
             cout << "Please set the timer" << endl;
             return 0;
         }
@@ -29,9 +25,10 @@ int main(int argc, char* argv[])
 
         case 3:
         {
-            program = argv[1];
+            string program = argv[1];
             string time = argv[2];
             stringstream s(time);
+            int timer = 0;
             s >> timer;
             cout << "Program : " << program << endl;
             cout << "Timer : " << timer << endl;
@@ -42,6 +39,9 @@ int main(int argc, char* argv[])
             OperatingSystem osSim = OperatingSystem(program, timer);
             osSim.run();
         }
+        break;
+
+        default:
         break;
 	}
     return 0;
